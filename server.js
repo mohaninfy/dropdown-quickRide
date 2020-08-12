@@ -11,8 +11,8 @@ const forceSSL = function(){
         next();
     }
 }
-app.use(express.static(__dirname + '/dist/voting-system-UI'));
+app.use(express.static(__dirname + '/dist/dropdown'));
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/dist/voting-system-UI/index.html'));
+    res.sendFile(path.join(__dirname + '/dist/dropdown/index.html'));
 });
 app.listen(process.env.PORT || 8080);
