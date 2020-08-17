@@ -19,6 +19,8 @@ export class AppComponent {
   'Project Lifecycle Management',
   'Meeting','Facilitation','Angular','JavaScript', 'HTML', 'CSS', 'JQuery','.Net']
   defaultArr = ['Angular','JavaScript', 'HTML', 'CSS', 'JQuery','.Net'];
+  
+  userSkill = '';
   constructor(){
     for(let i of this.defaultArr){
       this.addHero(i);
@@ -28,10 +30,12 @@ export class AppComponent {
 
   }
   addHero(name: string) {
-    name = name.trim();
-    if (!name) { return; }
-    let hero = name;
+    this.userSkill = name.trim();       
+  }
+  updateHero(){
+    if (this.userSkill) { return; }
+    let hero = this.userSkill;
     // Pipe updates display because skills array is a new object
-    this.skills = this.skills.concat(hero);    
+    this.skills = this.skills.concat(hero); 
   }
 }
