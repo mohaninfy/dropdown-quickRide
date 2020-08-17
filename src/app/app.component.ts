@@ -38,4 +38,6 @@ export class AppComponent {
     // Pipe updates display because skills array is a new object
     this.skills = this.skills.concat(hero); 
   }
+  selectSkill(event){
+  }
 }
