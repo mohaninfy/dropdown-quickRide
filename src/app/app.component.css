@@ -21,10 +21,10 @@ border-bottom: 1px solid grey !important;
     width:100%;
 }
 .add{
-    border: 1px solid lightgrey;
+    border: 1px solid darkgrey;
     border-radius: 25px;
     float:right;
-    padding: 15px;
+    padding: 5px;
     text-align: center;
     margin-bottom: 10px;
     color: white;
