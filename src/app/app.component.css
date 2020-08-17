@@ -13,3 +13,16 @@ max-height:300px;
 select{
     padding: 10px;
 }
+.w100{
+    width;100%;
+}
+.add{
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    float:right;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    background; lightgrey;
+}
