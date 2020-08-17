@@ -30,3 +30,6 @@ border-bottom: 1px solid grey !important;
     color: white;
     background: lightgrey;
 }
+.add:focus{
+    outline: none;
+}
