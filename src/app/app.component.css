@@ -13,6 +13,10 @@ max-height:300px;
 select{
     padding: 10px;
 }
+input{
+border: none;
+border-bottom: 1px solid grey !important;
+}
 .w100{
     width:100%;
 }
