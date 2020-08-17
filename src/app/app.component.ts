@@ -34,7 +34,7 @@ export class AppComponent {
   }
   updateHero(name: any){
     name = name.trim();
-    if (name) { return; }
+    if (!name) { return; }
     let hero = name;
     // Pipe updates display because skills array is a new object
     this.skills = this.skills.concat(hero); 
