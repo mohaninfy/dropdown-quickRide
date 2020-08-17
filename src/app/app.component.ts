@@ -23,7 +23,7 @@ export class AppComponent {
   userSkill = '';
   constructor(){
     for(let i of this.defaultArr){
-      this.updatehero(i);
+      this.updateHero(i);
     }
   }  
   ngOnInit(){
