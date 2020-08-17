@@ -23,7 +23,7 @@ export class AppComponent {
   userSkill = '';
   constructor(){
     for(let i of this.defaultArr){
-      this.addHero(i);
+      this.updatehero(i);
     }
   }  
   ngOnInit(){
@@ -32,9 +32,10 @@ export class AppComponent {
   addHero(name: string) {
     this.userSkill = name.trim();       
   }
-  updateHero(){
-    if (this.userSkill) { return; }
-    let hero = this.userSkill;
+  updateHero(name: any){
+    name = name.trim();
+    if (name) { return; }
+    let hero = name;
     // Pipe updates display because skills array is a new object
     this.skills = this.skills.concat(hero); 
   }
