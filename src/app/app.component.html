@@ -23,10 +23,10 @@
 					<p>Not listing above? Add below</p>
 					<div class="row">
 						<div class="col-lg-8 col-sm-12">
-						<input (change)="addHero($event.target.value)" [value]="" #userInput placeholder="Skill" class="w100"/>
+						<input (change)="addHero($event.target.value)" [value]="" placeholder="Skill" class="w100"/>
 						</div>
 						<div class="col-lg-2 col-sm-12">
-							<button class="add" (click)="addHero(#userInput.value)">+ADD</button>
+							<button class="add" (click)="updateHero()">+ADD</button>
 						</div>
 					</div>
 <!-- 					<p>
